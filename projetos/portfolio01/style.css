@@ -1,0 +1,23 @@
+body{
+    background-color: #080708;
+    color: #E6E8E6;
+    border-radius: 10%;
+    
+}
+
+strong{
+    color: #3772FF;
+
+}
+
+a{
+    background-color: #3772FF;
+    color: #080708;
+    border-radius: 10%;
+    padding: auto;
+    font-weight: 100;
+}
+img {
+    border-radius: 10%;
+
+}
