@@ -212,13 +212,18 @@ body {
     }
     .apresentacao{
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 6.5%;
+        gap: 40px;
+
     }
     .apresentacao__conteudo{
         width: auto;
+
     }
     .imagem{
+        max-width: 70%;
         width: auto;
     }
 
 }
+
