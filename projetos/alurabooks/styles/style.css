@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url("header.css");
+
+
 :root{
     --cor-de-fundo: #EBECEE;
+    --cor-fundo-cabeçalho: #FFFFFF;
+    --cor-font-cabeçalho: #EB9B00;
+    --cor-menu-hamburguer-ativo: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font-principal: 'Poppins', sans-serif;
+
 }
 
 body{
     background-color: var(--cor-de-fundo);
-}
-
-h1{
-    background-color: white;
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
