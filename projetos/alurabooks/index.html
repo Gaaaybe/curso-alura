@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -46,11 +47,47 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua proxima leitura?">
     </section>
-    
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Javascript.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Liderança.svg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Portugol.svg" alt=""></div>
+            </div>
+
+
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
 
     <footer>
 
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3, // Número de slides visíveis por vez
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 
 </body>
 

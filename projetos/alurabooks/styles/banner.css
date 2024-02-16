@@ -1,0 +1,38 @@
+.banner{
+    background: var(--cor-menu-hamburguer-ativo);
+    color: var(--cor-fundo-cabeçalho);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.banner__titulo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto{
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.banner__pesquisa{
+    background-color: transparent;
+    border: 1px solid var(--cor-fundo-cabeçalho);
+    color: var(--cor-fundo-cabeçalho);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+    font-family: var(--font-principal);
+    font-size: 12px;
+
+}
+
+.banner__pesquisa::placeholder{
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-fundo-cabeçalho);
+    background: url(../assets/lupa.svg) no-repeat;
+    background-position: 1em;
+}
