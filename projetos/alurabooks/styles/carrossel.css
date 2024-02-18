@@ -25,3 +25,57 @@
 .swiper-pagination-bullet-active {
     background: var(--cor-menu-hamburguer-ativo); /* Cor de fundo das bullets ativas */
 }
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    gap: 1.5em;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.card {
+    background: var(--cor-fundo-cabeçalho);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cor-font-cabeçalho);
+}
+
+.descricao__titulo-livro{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-titulo-livro);
+    margin: 0.5em 0;
+}
+
+.descricao__texto{
+    font-size: 14px;
+}
+
+.botoes__item{
+    margin: 0 0.5em;
+    margin-top: 1em;
+}
+.botoes__ancora{
+    background-color: var(--cor-font-cabeçalho);
+    padding: 1em 2.2em;
+    margin-top: 1em;
+    color: var(--cor-fundo-cabeçalho);
+    font-weight: 700;
+    text-decoration: none;
+}
