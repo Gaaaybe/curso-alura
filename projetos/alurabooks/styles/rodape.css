@@ -1,0 +1,8 @@
+hr{
+    margin: 0;
+
+}
+.rodape{
+    background-color: var(--cor-fundo-cabeçalho);
+    padding: 1em;
+}

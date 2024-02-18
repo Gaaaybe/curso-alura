@@ -4,6 +4,7 @@
 @import url("carrossel.css");
 @import url("topicos.css");
 @import url("contato.css");
+@import url("rodape.css");
 :root{
     --cor-de-fundo: #EBECEE;
     --cor-fundo-cabeçalho: #FFFFFF;
