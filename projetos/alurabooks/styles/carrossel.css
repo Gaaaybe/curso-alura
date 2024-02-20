@@ -79,3 +79,32 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+@media screen and (min-width: 1024px){
+    .carrossel__titulo{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: flex;
+        top: 60%;
+        color: white;
+        
+
+        background: var(--cor-menu-hamburguer-ativo);
+        border-radius: 50%;
+        width: 2.5em;
+        height: 2.5em;
+
+        text-align:center;
+        --swiper-navigation-size: 0.46em 0 3em 0;
+    }
+}
