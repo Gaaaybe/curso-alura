@@ -93,12 +93,14 @@
 
             <div class="swiper-wrapper">
                 <!-- Slides -->
+                
                 <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt=""></div>
                 <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt=""></div>
                 <div class="swiper-slide"><img src="assets/Javascript.svg" alt=""></div>
                 <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt=""></div>
                 <div class="swiper-slide"><img src="assets/Liderança.svg" alt=""></div>
                 <div class="swiper-slide"><img src="assets/Portugol.svg" alt=""></div>
+                
             </div>
 
 
@@ -229,8 +231,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            slidesPerView: 3, // Número de slides visíveis por vez
-            spaceBetween: 10,
+            slidesPerView: 1.99,
+            centeredSlides: true,
+            spaceBetween: 20,
+            lazyLoading: true,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',

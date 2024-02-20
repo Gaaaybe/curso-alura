@@ -33,6 +33,7 @@
     top: 100%;
     width: 60vw;
     z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .container__botao:checked~.lista-menu {
@@ -43,6 +44,7 @@
 .lista-menu__item {
     padding: 1em;
     background-color: var(--cor-fundo-cabeçalho);
+    
 }
 
 .lista-menu__titulo {
