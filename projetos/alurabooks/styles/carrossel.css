@@ -99,12 +99,14 @@
     }
 
     .swiper{
-        width: 60%;
+        width: 70%;
     }
+
+
 
     .swiper-button-prev, .swiper-button-next {
         display: flex;
-        top: 60%;
+        top: 55%;
         color: white;
         
 
@@ -114,6 +116,12 @@
         height: 2.5em;
 
         text-align:center;
-        --swiper-navigation-size: 0.46em 0 3em 0;
+        --swiper-navigation-size: 0.01em 0 0.01em 0;
+    }
+
+    .card{
+        width: 50%;
+        height: 25%;
+        margin: 3.8em auto 3em auto;
     }
 }

@@ -47,7 +47,10 @@
     }
 
     .banner__pesquisa::placeholder{
-        background-position: 5em;
+        background-position: 9em;
+    }
+    .banner{
+        padding: 5.25em 0 5.25em 0;
     }
     
 }
