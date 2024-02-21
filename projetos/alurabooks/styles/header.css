@@ -73,11 +73,16 @@
     display: none;
 }
 
+.container__texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
-    .container {
-        padding-left: 4em;
-        padding-right: 4em;
+    .cabeçalho {
+        padding: 0 5em;
+
+        
     }
 
     .container__titulo,
@@ -106,6 +111,7 @@
     .opcoes__item {
         padding: 0 1em;
         text-transform: uppercase;
+
     }
 
     .opcoes__link {
@@ -130,4 +136,24 @@
         display: none;
     }
 
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--cor-neutra);
+    }
+
+    .opcoes{
+        margin-right: 31em;
+
+    }
+
+    .container__texto{
+        display: block;
+    }
 }
