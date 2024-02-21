@@ -1,4 +1,4 @@
-.carrossel__titulo{
+.carrossel__titulo {
     color: var(--cor-font-cabeçalho);
     background-color: var(--cor-fundo-cabeçalho);
     text-align: center;
@@ -8,7 +8,7 @@
     padding: 1.3em 0 0.5em 0;
 }
 
-.swiper-slide img{
+.swiper-slide img {
     width: 90%;
     height: 90%;
     display: block;
@@ -22,28 +22,29 @@
     display: none;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     position: initial;
     margin: 0.5em 0;
 }
 
 .swiper-pagination-bullet-active {
-    background: var(--cor-menu-hamburguer-ativo); /* Cor de fundo das bullets ativas */
+    background: var(--cor-menu-hamburguer-ativo);
+    /* Cor de fundo das bullets ativas */
 }
 
-.card__descricao{
+.card__descricao {
     display: flex;
     justify-content: space-between;
     margin: 0.5em 0;
     gap: 1.5em;
 }
 
-.card__botoes{
+.card__botoes {
     display: flex;
     justify-content: space-between;
 }
 
-.botoes{
+.botoes {
     display: flex;
 }
 
@@ -55,28 +56,29 @@
     padding: 1em;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     font-size: 16px;
     font-weight: 700;
     color: var(--cor-font-cabeçalho);
 }
 
-.descricao__titulo-livro{
+.descricao__titulo-livro {
     font-size: 18px;
     font-weight: 700;
     color: var(--cor-titulo-livro);
     margin: 0.5em 0;
 }
 
-.descricao__texto{
+.descricao__texto {
     font-size: 14px;
 }
 
-.botoes__item{
+.botoes__item {
     margin: 0 0.5em;
     margin-top: 1em;
 }
-.botoes__ancora{
+
+.botoes__ancora {
     background-color: var(--cor-font-cabeçalho);
     padding: 1em 2.2em;
     margin-top: 1em;
@@ -85,46 +87,47 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 1024px){
-    .carrossel__titulo{
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
         font-size: 26px;
     }
 
-    .swiper-pagination{
+    .swiper-pagination {
         margin: 2em 0 3em 0;
     }
 
-    
-.swiper-slide img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
 
-}
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
 
-    .swiper{
+    }
+
+    .swiper {
         width: 70%;
     }
 
 
 
-    .swiper-button-prev, .swiper-button-next {
+    .swiper-button-prev,
+    .swiper-button-next {
         display: flex;
         top: 55%;
         color: white;
-        
+
 
         background: var(--cor-menu-hamburguer-ativo);
         border-radius: 50%;
         width: 2.5em;
         height: 2.5em;
 
-        text-align:center;
+        text-align: center;
         --swiper-navigation-size: 0.01em 0 0.01em 0;
     }
 
-    .card{
+    .card {
         width: 50%;
         height: 25%;
         margin: 3.8em auto 3em auto;

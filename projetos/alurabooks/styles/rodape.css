@@ -1,8 +1,9 @@
-hr{
+hr {
     margin: 0;
 
 }
-.rodape{
+
+.rodape {
     background-color: var(--cor-fundo-cabeçalho);
     padding: 1em;
 }

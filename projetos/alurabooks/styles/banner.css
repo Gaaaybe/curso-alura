@@ -1,21 +1,21 @@
-.banner{
+.banner {
     background: var(--cor-menu-hamburguer-ativo);
     color: var(--cor-fundo-cabeçalho);
     text-align: center;
     padding: 2.5em 2em;
 }
 
-.banner__titulo{
+.banner__titulo {
     font-size: 18px;
     font-weight: 700;
 }
 
-.banner__texto{
+.banner__texto {
     font-weight: 500;
     margin: 1em 0;
 }
 
-.banner__pesquisa{
+.banner__pesquisa {
     background-color: transparent;
     border: 1px solid var(--cor-fundo-cabeçalho);
     color: var(--cor-fundo-cabeçalho);
@@ -27,7 +27,7 @@
 
 }
 
-.banner__pesquisa::placeholder{
+.banner__pesquisa::placeholder {
     font-family: var(--font-principal);
     font-size: 14px;
     font-weight: 400;
@@ -37,20 +37,21 @@
     background-position: 1em;
 }
 
-@media screen and (min-width: 1024px){
-    .banner__titulo{
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
         font-size: 36px;
     }
 
-    .banner__pesquisa{
+    .banner__pesquisa {
         width: 50%;
     }
 
-    .banner__pesquisa::placeholder{
+    .banner__pesquisa::placeholder {
         background-position: 8em;
     }
-    .banner{
+
+    .banner {
         padding: 5.25em 0 5.25em 0;
     }
-    
+
 }
