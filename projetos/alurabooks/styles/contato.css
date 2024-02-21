@@ -51,10 +51,23 @@
 
     .contato__descricao {
         margin: 1.5em 5em 1.8em 4em;
-        width: 30%;
+        width: 25%;
     }
 
     .contato__email {
-        width: 30%;
+        width: 25%;
     }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .contato__descricao {
+        margin: 1.5em 1em 1.8em 0;
+        width: 20%;
+    }
+
+    .contato__email {
+        width: 20%;
+    }
+
 }
