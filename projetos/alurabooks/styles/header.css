@@ -24,6 +24,14 @@
 
 }
 
+.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer{
+    background-image: url(../assets/Menu\ Aberto.svg);
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--cor-menu-hamburguer-ativo);
+}
+
 .container__imagem {
     padding: 1em;
 }
@@ -108,10 +116,24 @@
         display: flex;
     }
 
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item{
+        background: var(--cor-menu-hamburguer-ativo);
+        color: var(--cor-fundo-cabeçalho);
+    }
+    
     .opcoes__item {
-        padding: 0 1em;
+        padding: 2em 1em;
         text-transform: uppercase;
+    }
 
+    .lista-menu__item:hover{
+        background: var(--cor-menu-hamburguer-ativo);
+
+    }
+
+    .lista-menu__item:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--cor-fundo-cabeçalho);
+        text-decoration: none;
     }
 
     .opcoes__link {
