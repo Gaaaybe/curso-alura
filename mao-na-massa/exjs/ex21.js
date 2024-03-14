@@ -7,3 +7,5 @@ console.log(frutas); // [ 'Maçã', 'Banana', 'Laranja', 'Limão', 'Abacaxi' ]
 frutas.splice(1, 2, 'kiwi', 'pessêgo');
 
 console.log(frutas); // [ 'Maçã', 'kiwi', 'pessêgo', 'Limão', 'Abacaxi' ]
+
+frutas.forEach((fruta)=>console.log(`[${frutas.indexOf(fruta)}]: ${fruta}`));
