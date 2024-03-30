@@ -20,7 +20,7 @@ async function checaStatus(listaURLs) {
 
                 try {
                     const response = await fetch(url)
-                    return response.status
+                    return `${response.status} - ${response.statusText}`;
 
                 } catch (erro) {
                     return mitigaErro(erro);
