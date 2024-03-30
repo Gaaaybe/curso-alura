@@ -1,11 +1,11 @@
 {
   "name": "lib-testa-links",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Uma biblioteca que valida links de um arquivo markdown e retorna o status de cada um deles.",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "bin": {
-    "lib-testa-links": "./cli.js"
+    "lib-testa-links": "src/cli.js"
   },
   "preferGlobal": true,
   "scripts": {
@@ -15,14 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gaaaybe/curso-alura/tree/main/projetos/lib-testa-links"
+    "url": "git+https://github.com/Gaaaybe/curso-alura.git#main"
   },
-  "keywords": ["links", "validação"],
+  "keywords": [
+    "links",
+    "validação"
+  ],
   "author": "Gabriel Menezes",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gaaaybe/curso-alura/tree/main/projetos/lib-testa-links",
-    "email" : "gabenesus@gmail.com"
+    "email": "gabenesus@gmail.com"
   },
   "homepage": "https://github.com/Gaaaybe/curso-alura",
   "dependencies": {
