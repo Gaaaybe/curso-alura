@@ -1,9 +1,13 @@
 {
   "name": "lib-testa-links",
   "version": "1.0.0",
-  "description": "",
+  "description": "Uma biblioteca que valida links de um arquivo markdown e retorna o status de cada um deles.",
   "main": "index.js",
   "type":"module",
+  "bin": {
+    "lib-testa-links": "./cli.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cli": "node ./src/cli.js ./arquivos/texto.md",
@@ -11,15 +15,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alura-cursos/2708-node-lib-md.git"
+    "url": "git+https://github.com/Gaaaybe/curso-alura/tree/main/projetos/lib-testa-links"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["links", "validação"],
+  "author": "Gabriel Menezes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alura-cursos/2708-node-lib-md/issues"
+    "url": "https://github.com/Gaaaybe/curso-alura/tree/main/projetos/lib-testa-links",
+    "email" : "gabenesus@gmail.com"
   },
-  "homepage": "https://github.com/alura-cursos/2708-node-lib-md#readme",
+  "homepage": "https://github.com/Gaaaybe/curso-alura",
   "dependencies": {
     "chalk": "5.3.0"
   }
