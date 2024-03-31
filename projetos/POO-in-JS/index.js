@@ -8,3 +8,7 @@ const novoAdmin = new Admin('Roberval', 'r@r.com', '01/01/1990');
 // console.log(novoUser.exibirInfos());
 
 console.log(novoAdmin.nome);
+
+novoAdmin.nome = 'Robervaldo';
+
+console.log(novoAdmin.nome);

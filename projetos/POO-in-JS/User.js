@@ -32,6 +32,10 @@ export default class User {
         return this.#ativo;
     };
 
+    set nome (novoNome) {
+        this.#nome = novoNome;
+    };
+
     #montaObjUser(){
         return ({
             nome: this.#nome,
