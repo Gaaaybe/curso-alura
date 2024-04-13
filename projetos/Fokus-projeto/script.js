@@ -16,7 +16,7 @@ const pauseIcon = document.querySelector('.app__card-primary-butto-icon');
 const tempoNaTela = document.querySelector('#timer');
 musica.loop = true;
 
-let tempoDecorridoEmSegundos = 15;
+let tempoDecorridoEmSegundos = 5;
 let intervaloId = null;
 
 musicFocoInput.addEventListener('change', () => {
