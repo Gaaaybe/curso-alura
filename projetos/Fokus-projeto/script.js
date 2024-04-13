@@ -16,7 +16,7 @@ const pauseIcon = document.querySelector('.app__card-primary-butto-icon');
 const tempoNaTela = document.querySelector('#timer');
 musica.loop = true;
 
-let tempoDecorridoEmSegundos = 5;
+let tempoDecorridoEmSegundos = 1500;
 let intervaloId = null;
 
 musicFocoInput.addEventListener('change', () => {
@@ -78,7 +78,7 @@ function alterarContexto(contexto) {
 
 const contagemRegressiva = () => {
     if(tempoDecorridoEmSegundos <= 0){
-        //audioTempoFinalizado.play();
+        audioTempoFinalizado.play();
         const focoAtivo = html.getAttribute('data-contexto') === 'foco';
         if (focoAtivo) {
             const evento = new CustomEvent('FocoTerminado');
