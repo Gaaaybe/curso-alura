@@ -48,6 +48,7 @@ const mensagens = {
 };
 
 function verificaCampo(campo) {
+    campo.setCustomValidity("");
     let mensagem = "";
     if (campo.name === "cpf" && campo.value.length >= 11) {
         validaCPF(campo);
