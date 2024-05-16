@@ -3,7 +3,9 @@ import http from "http";
 const PORT = 3000;
 
 const rotas = {
-    "/": "Curso de Node.js"
+    "/": "Curso de Node.js",
+    "/livros": "Livros",
+    "/autores": "Autores"
 };
 
 const server = http.createServer((req, res) => {
@@ -12,5 +14,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log("Servidor rodando na porta", PORT);
+    console.log(`Servidor rodando no link http://localhost:${PORT}/`);
 });
