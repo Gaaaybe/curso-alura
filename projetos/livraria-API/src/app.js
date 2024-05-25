@@ -1,5 +1,6 @@
 import express from 'express';
 import conectarNaDB from './config/dbconnect.js';
+import livro from './models/livro.js';
 
 
 const conexao = await conectarNaDB(); // Conexão com o banco de dados
@@ -12,29 +13,14 @@ conexao.once("open", () => { // Conexão bem sucedida
 const app = express();
 app.use(express.json());
 
-const livros = [ // Array de livros
-    {
-        id: 1,
-        nome: "O Senhor dos Anéis",
-    },
-    {
-        id: 2,
-        nome: "Harry Potter",
-    }
-];
-
-function buscaLivro(id) { // Função para buscar livro pelo id
-    return livros.findIndex(livro => {
-        return livro.id === Number(id);
-    });
-;}
 
 app.get('/', (req, res) => { // Rota principal
     res.status(200).send("Curso Node Js");
 });
 
-app.get('/livros', (req, res) => { // Rota para listar todos os livros
-    res.status(200).json(livros);
+app.get('/livros', async (req, res) => { // Rota para listar todos os livros
+    const listaLivros = await livro.find({});
+    res.status(200).json(listaLivros);
 });
 
 app.get('/livros/:id', (req, res) => { // Rota para buscar livro pelo id
