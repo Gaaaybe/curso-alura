@@ -1,7 +1,6 @@
 import express from 'express';
 import conectarNaDB from './config/dbconnect.js';
-import livro from './models/Livro.js';
-
+import routes from './routes/index.js';
 
 const conexao = await conectarNaDB(); // Conexão com o banco de dados
 conexao.on("error", (erro) => { console.log("Erro ao conectar no banco de dados: " + erro)}); // Tratamento de erro
@@ -11,21 +10,11 @@ conexao.once("open", () => { // Conexão bem sucedida
 });
 
 const app = express();
-app.use(express.json());
-
-
-app.get('/', (req, res) => { // Rota principal
-    res.status(200).send("Curso Node Js");
-});
+routes(app);
 
 app.get('/livros/:id', (req, res) => { // Rota para buscar livro pelo id
     const index = buscaLivro(req.params.id);
     res.status(200).json(livros[index]);
-});
-
-app.post('/livros', (req, res) => { // Rota para adicionar livro
-    livros.push(req.body);
-    res.status(201).send("Livro adicionado com sucesso");
 });
 
 app.put('/livros/:id', (req, res) => { // Rota para atualizar livro
