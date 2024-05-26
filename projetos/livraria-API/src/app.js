@@ -1,6 +1,6 @@
 import express from 'express';
 import conectarNaDB from './config/dbconnect.js';
-import livro from './models/livro.js';
+import livro from './models/Livro.js';
 
 
 const conexao = await conectarNaDB(); // Conexão com o banco de dados
@@ -16,11 +16,6 @@ app.use(express.json());
 
 app.get('/', (req, res) => { // Rota principal
     res.status(200).send("Curso Node Js");
-});
-
-app.get('/livros', async (req, res) => { // Rota para listar todos os livros
-    const listaLivros = await livro.find({});
-    res.status(200).json(listaLivros);
 });
 
 app.get('/livros/:id', (req, res) => { // Rota para buscar livro pelo id
