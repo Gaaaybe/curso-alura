@@ -12,10 +12,4 @@ conexao.once("open", () => { // Conexão bem sucedida
 const app = express();
 routes(app);
 
-app.delete('/livros/:id', (req, res) => { // Rota para deletar livro
-    const index = buscaLivro(req.params.id);
-    livros.splice(index, 1);
-    res.status(200).json(livros);
-});
-
 export default app;
