@@ -1,0 +1,34 @@
+:root {
+    --cor-principal: #FFFFFF;
+    --cor-secundario: #C0C0C0;
+    --botao: #167BF7;
+    --cor-de-fundo: #00030C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-principal);
+}
+
+.principal {
+    background-image: url(assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container__botao {
+    background-color: var(--botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-principal);
+    text-decoration: none;
+}
